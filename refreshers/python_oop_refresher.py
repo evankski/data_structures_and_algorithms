@@ -30,6 +30,10 @@ class Dog:
     def add_one(self, x):
         return x + 1
 
+    # we can modify attributes as well -- ex
+    def change_name(self, name):
+        self.name = name
+
 # This is defining a variable that uses the class Dog
 
 d = Dog("Spike") # Spike as a parameter for name
@@ -46,4 +50,7 @@ print(d.name)
 # now if we do print get_name we will still grab the name
 print(d.get_name())
 
+d2 = Dog("Maverick")
+d2.change_name("Achilles") # this now changes the attribute name
 
+print(d2.get_name())

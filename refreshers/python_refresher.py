@@ -1,4 +1,3 @@
-
 # Simple python calculator
 print("Welcome to the python calculator!")
 
